@@ -1,20 +1,14 @@
--- genders
-INSERT INTO PUBLIC."genders" (gender_id, gender_name)
-    VALUES (1, 'male');
-INSERT INTO PUBLIC."genders" (gender_id, gender_name)
-    VALUES (2, 'female');
-
 -- clients
-INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender_id)
-    VALUES (1, 'John', NULL, 'Doe', '1998-06-29', 1);
-INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender_id)
-    VALUES (2, 'Georgia', 'Williams', 'Allen', '1919-05-12', 2);
-INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender_id)
-    VALUES (3, 'Ben', 'David', 'Alford', '1964-12-20', 1);
-INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender_id)
-    VALUES (4, 'Audrey', 'Marie', 'Anderson', '1975-03-07', 2);
-INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender_id)
-    VALUES (5, 'Geoffrey', 'Rashid', 'Arend', '1978-02-28', 1);
+INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender)
+    VALUES (1, 'John', NULL, 'Doe', '1998-06-29', 'Male');
+INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender)
+    VALUES (2, 'Georgia', 'Williams', 'Allen', '1919-05-12', 'Female');
+INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender)
+    VALUES (3, 'Ben', 'David', 'Alford', '1964-12-20', 'Male');
+INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender)
+    VALUES (4, 'Audrey', 'Marie', 'Anderson', '1975-03-07', 'Female');
+INSERT INTO PUBLIC."clients" (client_id, first_name, middle_name, surname, birthdate, gender)
+    VALUES (5, 'Geoffrey', 'Rashid', 'Arend', '1978-02-28', 'Male');
 
 -- manufacturers
 INSERT INTO PUBLIC."manufacturers" (manufacturer_id, manufacturer_name)
